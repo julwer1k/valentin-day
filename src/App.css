@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.valentine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+/* Custom class for Yes button styles */
+.yes-button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #a7efb8; /* bg-green-500 */
+  color: #fff; /* text-white */
+  font-weight: bold; /* font-bold */
+  padding: 8px 16px; /* py-2 px-4 */
+  border: none;
+  border-radius: 8px; /* rounded */
+  margin-right: 8px; /* mr-4 */
+}
+
+.yes-button:hover {
+  background-color: #16361c; /* hover:bg-green-700 */
+}
+
+/* Custom class for No button styles */
+.no-button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: none;
+  background-color: #c90d0d; /* bg-red-500 */
+  color: #fff; /* text-white */
+  font-weight: bold; /* font-bold */
+  padding: 8px 16px; /* py-2 px-4 */
+  border-radius: 8px; /* rounded */
+}
+
+.no-button:hover {
+  background-color: #c82333; /* hover:bg-red-700 */
+}
+/* Custom class for text-4xl my-4 container */
+.text-container {
   text-align: center;
+  font-size: 2.25rem; /* Equivalent to text-4xl in tailwindcss */
+  margin-top: 1rem; /* Equivalent to my-4 in tailwindcss */
+  margin-bottom: 1rem; /* Equivalent to my-4 in tailwindcss */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.centered-container {
+  display: flex;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  height: 100vh;
+  margin: 0;
 }
